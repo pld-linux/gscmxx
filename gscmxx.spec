@@ -1,14 +1,14 @@
 %include /usr/lib/rpm/macros.perl
-Summary(pl):	Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK
 Summary:	Gtk-frontend for scmxx
+Summary(pl):	Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK
 Name:		gscmxx
 Version:	0.4.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://prdownloads.sourceforge.net/gscmxx/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gscmxx/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
-URL:		http://gscmxx.sourceforge.net
+URL:		http://gscmxx.sourceforge.net/
 BuildRequires:	perl-gtk
 BuildRequires:	perl-Image-Size
 Requires:	scmxx > 0.6.0
@@ -17,8 +17,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Gtk-frontend for scmxx.
 
 %description -l pl
+Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK.
 
 %prep
 %setup -q
@@ -40,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README doc/Features.txt TODO
 %attr(755,root,root) %{_bindir}/*
-/usr/share/pixmaps/%{name}
+%{_pixmapsdir}/%{name}
 %{_datadir}/%{name}
 %{perl_sitelib}/*
