@@ -29,6 +29,7 @@ Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK.
 
 %build
 %{__perl} Makefile.PL \
+	PREFIX=%{_prefix} \
 	INSTALLDIRS=vendor
 %{__make}
 
