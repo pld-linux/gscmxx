@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gscmxx/%{name}-%{version}.tar.gz
+# Source0-md5:	5efea1ca76d0e32928e9decde8525f14
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://gscmxx.sourceforge.net/
 BuildRequires:	perl-gtk
