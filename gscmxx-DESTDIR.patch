@@ -1,0 +1,20 @@
+diff -ur gscmxx-0.4.1-orig/Makefile.PL gscmxx-0.4.1/Makefile.PL
+--- gscmxx-0.4.1-orig/Makefile.PL	Sun Sep  1 14:23:14 2002
++++ gscmxx-0.4.1/Makefile.PL	Tue Jan  7 13:44:11 2003
+@@ -197,12 +197,12 @@
+ sub postamble {
+ 	my $postamble = <<'END';
+ pixmaps ::
+-	$(MKPATH) $(PREFIX)/share/pixmaps/gscmxx
+-	@$(MOD_INSTALL) ./pixmaps/ $(PREFIX)/share/pixmaps/gscmxx/
++	$(MKPATH) $(DESTDIR)$(PREFIX)/share/pixmaps/gscmxx
++	@$(MOD_INSTALL) ./pixmaps/ $(DESTDIR)$(PREFIX)/share/pixmaps/gscmxx/
+ 
+ i18n ::
+-	$(MKPATH) $(PREFIX)/share/gscmxx/i18n
+-	@$(MOD_INSTALL) ./share/i18n/ $(PREFIX)/share/gscmxx/i18n/
++	$(MKPATH) $(DESTDIR)$(PREFIX)/share/gscmxx/i18n
++	@$(MOD_INSTALL) ./share/i18n/ $(DESTDIR)$(PREFIX)/share/gscmxx/i18n/
+ 
+ END
+ 	return $postamble;
