@@ -46,5 +46,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README doc/Features.txt TODO
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/%{name}
-%{_datadir}/%{name}
-%{perl_vendorlib}/*
+%dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/i18n
+%{_datadir}/%{name}/i18n/english
+%lang(de) %{_datadir}/%{name}/i18n/german
+%lang(it) %{_datadir}/%{name}/i18n/italian
+%lang(hu) %{_datadir}/%{name}/i18n/magyar
+%{perl_vendorlib}/SCMxx*
+%{_mandir}/man1/*
+%{_mandir}/man3/SCMxx*
