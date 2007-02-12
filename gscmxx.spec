@@ -1,6 +1,6 @@
 %include /usr/lib/rpm/macros.perl
 Summary:	Gtk-frontend for scmxx
-Summary(pl):	Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK
+Summary(pl.UTF-8):   Graficzna nakÅ‚adka na program scmxx korzystajÄ…ca z perl-GTK
 Name:		gscmxx
 Version:	0.4.1
 Release:	2
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Gtk-frontend for scmxx.
 
-%description -l pl
-Graficzna nak³adka na program scmxx korzystaj±ca z perl-GTK.
+%description -l pl.UTF-8
+Graficzna nakÅ‚adka na program scmxx korzystajÄ…ca z perl-GTK.
 
 %prep
 %setup -q
