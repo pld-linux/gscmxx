@@ -3,7 +3,7 @@ Summary:	Gtk-frontend for scmxx
 Summary(pl.UTF-8):	Graficzna nakładka na program scmxx korzystająca z perl-GTK
 Name:		gscmxx
 Version:	0.4.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gscmxx/%{name}-%{version}.tar.gz
