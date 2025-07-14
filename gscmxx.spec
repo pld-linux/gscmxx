@@ -24,7 +24,7 @@ Graficzna nakładka na program scmxx korzystająca z perl-GTK.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
